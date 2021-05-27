@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:id="@+id/my_test_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="빅데이터분석기사 1회"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:scrollbars="horizontal"></TextView>
+
+        <TextView
+            android:id="@+id/my_test_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="2021/04/17"
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/my_test_score"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="점수\n확인"
+        android:textSize="15dp"
+        android:backgroundTint="@color/main"></Button>
+
+    <Button
+        android:id="@+id/my_test_objection"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="이의\n신청"
+        android:textSize="15dp"
+        android:backgroundTint="@color/main"></Button>
+
+    <Button
+        android:id="@+id/my_test_previous"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="다시\n풀기"
+        android:textSize="15dp"
+        android:backgroundTint="@color/main"></Button>
+
+</LinearLayout>

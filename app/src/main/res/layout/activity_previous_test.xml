@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviousTestActivity">
+
+    <include
+        android:id="@+id/toolbar_PreviousTestActivity"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/previous_text"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="원하시는 시험을 검색하세요"
+        android:inputType="text"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_PreviousTestActivity"></EditText>
+
+    <ImageButton
+        android:id="@+id/previous_search_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/previous_text"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_PreviousTestActivity"
+        tools:src="@android:drawable/ic_menu_search"></ImageButton>
+
+    <TextView
+        android:id="@+id/previous_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:text="인기 검색어"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_text"></TextView>
+
+    <Button
+        android:id="@+id/previous_popular_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_circle"
+        android:backgroundTint="@color/main"
+        android:text="한국사"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_textview"></Button>
+
+    <Button
+        android:id="@+id/previous_popular_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_circle"
+        android:backgroundTint="@color/main"
+        android:text="정보처리기사"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/previous_popular_1"
+        app:layout_constraintTop_toBottomOf="@+id/previous_textview"></Button>
+
+    <Button
+        android:id="@+id/previous_popular_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_circle"
+        android:backgroundTint="@color/main"
+        android:text="빅데이터"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/previous_popular_2"
+        app:layout_constraintTop_toBottomOf="@+id/previous_textview"></Button>
+
+    <ListView
+        android:id="@+id/previous_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_popular_2"></ListView>
+</androidx.constraintlayout.widget.ConstraintLayout>
