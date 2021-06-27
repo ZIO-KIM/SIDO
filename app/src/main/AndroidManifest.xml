@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.main_sido">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MAIN_SIDO">
+        <activity android:name=".ManageCandidateActivity"></activity>
+        <activity android:name=".ManageTestDetailActivity" />
+        <activity android:name=".MakeTestActivity3" />
+        <activity android:name=".MakeTestActivity2" />
+        <activity android:name=".ApplyTestActivity2" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PreviousTestActivity" />
+        <activity android:name=".MyTestActivity" />
+        <activity android:name=".ApplyTestActivity" />
+        <activity android:name="com.MyTestActivity" />
+        <activity android:name=".StudentFaqActivity" />
+        <activity android:name=".ManageTestActivity" />
+        <activity android:name=".ManagerFaqActivity" />
+        <activity android:name=".MakeTestActivity" />
+        <activity android:name=".StudentMainActivity" />
+        <activity android:name=".ManagerMainActivity" />
+        <activity android:name=".SubMainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

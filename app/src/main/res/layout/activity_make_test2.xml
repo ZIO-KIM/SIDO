@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeTestActivity2">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_MakeTestActivity2"/>
+
+    <TextView
+        android:id="@+id/make_test_2_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="시험 주의 사항을 입력해주세요."
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_MakeTestActivity2"></TextView>
+
+    <TextView
+        android:id="@+id/make_test_precautions_text"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text_border"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:text="시험 안내 사항 _ 스크롤 적용 완료"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_test_2_textview"></TextView>
+
+    <Button
+        android:id="@+id/make_test_next_btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/button_circle"
+        android:backgroundTint="@color/main"
+        android:text="다음"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_test_precautions_text"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
